@@ -12,6 +12,19 @@ services:
     networks:
       - default
 
+  ute-history:
+    build: .
+    command: ["python", "history_main.py"]
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      - TZ=America/Montevideo
+    volumes:
+      - ./credentials:/app/credentials
+      - ./data:/app/data
+    networks:
+      - default
+
 networks:
   default:
     name: ute2mqtt-network

@@ -28,3 +28,10 @@ venv/
 # Logs
 *.log
 logs/
+
+# Meter history and exports
+data/
+*.sqlite3*
+
+# macOS metadata
+.DS_Store

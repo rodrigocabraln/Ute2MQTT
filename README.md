@@ -1,3 +1,7 @@
+# Historial de consumo de 15 minutos
+
+Este repositorio conserva Ute2MQTT y agrega descarga, persistencia y publicación MQTT del consumo medido. Ver [instalación, arquitectura y límites](HISTORY.md).
+
 # Ute2MQTT
 
 Obtiene datos de consumo eléctrico desde la API del proveedor de energía y los publica a Home Assistant via MQTT.
